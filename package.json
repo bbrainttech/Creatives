@@ -4,10 +4,10 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "pcss": "postcss style.css --dir dest -w"
+    "pcss": "postcss raw.css -o style.css -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "RayanTech",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
