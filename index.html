@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desimotive</title>
+    <title>Design</title>
 
     <link rel="stylesheet" href="vendors/aos/aos.css">
     <script src="vendors/aos/aos.js"></script>
@@ -14,16 +14,19 @@
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="vendors/remixicon/remixicon.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link rel="stylesheet" href="vendors/anim.css">
 
     <link rel="stylesheet" href="style.css">
     <script src="funcs.js" defer></script>
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <div class="loader"><img src="img/loader.gif" alt=""></div>
     <div class="container">
-        <nav class="animate__animated animate__backInUp">
+        <nav class="animate__animated animate__zoomInUp animate__delay-1s">
 
             <div href="index.html" class="logo">
                 <img src="img/logo.JPG" alt="logo">
@@ -68,9 +71,9 @@
                             <span><i class="ri ri-exchange-funds-line"></i></span>
                             <span>transfers</span>
                         </li>
-                        <li data-aos="fade-right" data-aos-delay="1400">
+                        <li data-aos="fade-right" data-aos-delay="1400" >
                             <span><i class="bi bi-chat-square-text"></i></span>
-                            <a href="#chats">chats</a>
+                            <a href="#chats" >chats</a>
                         </li>
                         <li data-aos="fade-right" data-aos-delay="1600">
                             <span><i class="ri ri-pie-chart-line"></i></span>
@@ -83,12 +86,12 @@
                     </ul>
                 </div>
                 <div class="logout">
-                    <i class="bi bi-box-arrow-in-right"></i>
+                    <i class="bi bi-box-arrow-in-left"></i>
                     <span>logout</span>
                 </div>
             </aside>
             <section class="main">
-                <div class="m1" data-aos="fade-up" data-aos-delay="500">
+                <div class="m1 animate__animated animate__flipInY animate__delay-1s" data-aos="fade-up" data-aos-delay="500">
                     <div class="bg">
                         <div class="ovl">
                             <div class="tp">
@@ -116,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sm">
+                    <div class="sm animate__animated animate__rubberBand animate__delay-2s">
                         <h4>Recent split <i class="bi bi-minecart-loaded"></i></h4>
                         <div>
                             <span>
@@ -176,7 +179,7 @@
                     </div>
                 </div>
                 <div class="m2" data-aos="fade-up" data-aos-delay="1000">
-                    <div class="sm">
+                    <div class="sm animate__animated animate__rubberBand animate__delay-2s">
                         <h4>Near by friends <i class="bi bi-people"></i></h4>
                         <div>
                             <div class="nbf">
@@ -204,7 +207,7 @@
                                         <h3 class="wrt">$28.20</h3>
                                     </span>
                                     <span style=" --m_g1 : var(--col1); --m_g2 : var(--col4); --shad : #da841b51;">
-                                        <input style="--vg : 40%;" type="range" id="rts" value="4"  min="0" max="10" step="1" oninput="dp1.value = value;" >
+                                        <input style="--vg : 40%;" type="range" id="rts" value="4"  min="0" max="10" oninput="dp1.value = value;" >
                                         <div id="st_p">
                                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                                         </div>
@@ -220,7 +223,7 @@
                                         <h3 class="wrt">$20.20</h3>
                                     </span>
                                     <span style=" --m_g1 : #65ff92; --m_g2 : #478db3; --shad : #478db351;">
-                                        <input style="--vg : 30%;" type="range" id="rts" value="3"  min="0" max="10" step="1" oninput="dp2.value = value;">
+                                        <input style="--vg : 30%;" type="range" id="rts" value="3"  min="0" max="10"  oninput="dp2.value = value;">
                                         <div id="st_p">
                                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                                         </div>
@@ -236,7 +239,7 @@
                                         <h3 class="wrt">$35.60</h3>
                                     </span>
                                     <span style=" --m_g1 : #b260ff; --m_g2 : #00e6e2; --shad : #2ef3f051;">
-                                        <input style="--vg : 70%;"  type="range" id="rts" value="7" min="0" max="10" step="1" oninput="dp3.value = value;">
+                                        <input style="--vg : 70%;"  type="range" id="rts" value="7" min="0" max="10"  oninput="dp3.value = value;">
                                         <div id="st_p">
                                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                                         </div>
@@ -252,7 +255,7 @@
                                         <h3 class="wrt">$16.70</h3>
                                     </span>
                                     <span style=" --m_g1 : var(--col2); --m_g2 : #b260ff; --shad : #b260ff51;">
-                                        <input style="--vg : 50%;"  type="range" id="rts"  min="0" max="10" step="1" oninput="dp4.value = value;">
+                                        <input style="--vg : 50%;"  type="range" id="rts"  min="0" max="10"  oninput="dp4.value = value;">
                                         <div id="st_p">
                                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                                         </div>
@@ -269,7 +272,7 @@
                                         <h3 class="wrt">$15.45</h3>
                                     </span>
                                     <span style=" --m_g1 : var(--col5); --m_g2 : var(--col6); --shad : #00befd51;">
-                                        <input style="--vg : 80%;" type="range" id="rts" value="8"  min="0" max="10" step="1" oninput="dp5.value = value;">
+                                        <input style="--vg : 80%;" type="range" id="rts" value="8"  min="0" max="10"  oninput="dp5.value = value;">
                                         <div id="st_p">
                                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                                         </div>
@@ -313,11 +316,11 @@
                     <h4>Split Request <i class="bi bi-layout-wtf"></i></h4>
                     <div class="bg animate__animated animate__bounceInUp animate__delay-3s">
                         <div class="top">
-                            <div class="me">
+                            <div class="me animate__animated animate__zoomInDown animate__delay-3s">
                                 <img src="img/profiles/aguero.jpeg" alt="">
                             </div>
                             <div class="dets">
-                                <h5>Hey, <strong>Mike!</strong></h5>
+                                <h5>Hey, <strong>Frank!</strong></h5>
                                 <p class="stat"> <strong>Rayantech</strong> requested you for a split bill payment of <em>$72.80</em> from <strong>Suchi & bar</strong></p>
                             </div>
                         </div>

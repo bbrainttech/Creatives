@@ -16,5 +16,8 @@
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
     "postcss-preset-env": "^8.5.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }
