@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="vendors/aos/aos.css">
     <script src="vendors/aos/aos.js"></script>
 
-    <link rel="stylesheet" href="vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="vendors/bootstrap-icons/bootstrap-icons.css"> -->
 
-    <link rel="stylesheet" href="vendors/remixicon/remixicon.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="vendors/remixicon/remixicon.css"> -->
+    <link rel="stylesheet" href="vendors/anim.css">
 
     <link rel="stylesheet" href="style.css">
     <script src="funcs.js" defer></script>
@@ -20,30 +23,33 @@
 <body>
     <div class="loader"><img src="img/loader.gif" alt=""></div>
     <div class="container">
-        <nav data-aos="fade-down">
+        <nav class="animate__animated animate__backInUp">
 
             <div href="index.html" class="logo">
                 <img src="img/logo.JPG" alt="logo">
             </div>
 
             <div class="name">
-            <label for="name">hello,&nbsp;rayantech</label>
+                <label for="name">hello,&nbsp;rayantech</label>
             </div>
 
             <div class="srch">
                 <input type="search" name="" id="" placeholder="search">
                 <i class="bi bi-search"></i>
             </div>
-
             <div class="prof">
                 <span class="note" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1500"><i class="bi bi-bell" ></i></span>
                 <span data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1700"><i class="bi bi-chat-dots"></i></span>
                 <span data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1900"><img src="img/profiles/aguero.jpeg" alt=""></span>
             </div>
+            <div class="batt animate__animated animate__bounceInRight animate__delay-3s">
+                 <p data-battery-per></p><span data-props></span>
+                 <i class="bi bi-lightning-charge"></i>
+            </div>
 
         </nav>
         <section class="board">
-            <aside class="left_bar" data-aos="fade-right">
+            <aside class="left_bar animate__animated animate__zoomInLeft animate__delay-1s" data-aos="fade-right">
                 <div class="menu">
                     <ul>
                         <li class="act" data-aos="fade-right" data-aos-delay="600">
@@ -54,17 +60,17 @@
                             <span><i class="bi bi-wallet2"></i></span>
                             <span>my wallet</span>
                         </li>
+                        <li data-aos="fade-right" data-aos-delay="1200">
+                            <span><i class="bi bi-card-text"></i></span>
+                            <span>bills</span>
+                        </li>
                         <li data-aos="fade-right" data-aos-delay="1000">
                             <span><i class="ri ri-exchange-funds-line"></i></span>
                             <span>transfers</span>
                         </li>
-                        <li data-aos="fade-right" data-aos-delay="1200">
-                            <span><i class="bi bi-card-text"></i></span>
-                            <span>bill</span>
-                        </li>
                         <li data-aos="fade-right" data-aos-delay="1400">
                             <span><i class="bi bi-chat-square-text"></i></span>
-                            <span>message</span>
+                            <a href="#chats">chats</a>
                         </li>
                         <li data-aos="fade-right" data-aos-delay="1600">
                             <span><i class="ri ri-pie-chart-line"></i></span>
@@ -94,12 +100,12 @@
                             </div>
                             <div class="btm">
                                 <div class="custs">
-                                    <label>Split  with</label>
+                                    <label>Split with</label>
                                     <div>
-                                        <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000"><img src="img/profiles/team-1.jpg" alt=""></span>
+                                        <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000"><img src="img/profiles/port.png" alt=""></span>
                                         <span data-aos="fade-left" data-aos-duration="600" data-aos-delay="2300"><img src="img/profiles/zidan.PNG" alt=""></span>
-                                        <span data-aos="fade-left" data-aos-duration="300" data-aos-delay="2600"><img src="img/profiles/team-3.jpg" alt=""></span>
-                                        <span data-aos="fade-left" data-aos-duration="100" data-aos-delay="2800"><img src="img/profiles/team-4.jpg" alt=""></span>
+                                        <span data-aos="fade-left" data-aos-duration="300" data-aos-delay="2600"><img src="img/profiles/venant.jpeg" alt=""></span>
+                                        <span data-aos="fade-left" data-aos-duration="100" data-aos-delay="2800"><img src="img/profiles/IMG_.jpeg" alt=""></span>
                                         <span data-aos="fade-left" data-aos-delay="2900"><img src="img/profiles/prof.jpg" alt=""></span>
                                     </div>
                                 </div>
@@ -111,7 +117,7 @@
                         </div>
                     </div>
                     <div class="sm">
-                        <h4>Recent split</h4>
+                        <h4>Recent split <i class="bi bi-minecart-loaded"></i></h4>
                         <div>
                             <span>
                                 <span class="logg"><img src="img/log.png">Suchi and Japanese</span>
@@ -120,18 +126,18 @@
                             <div class="cor">
                                 <div class="meal"><img src="img/r-pizza.png" alt=""></div>
                                 <div class="prf">
-                                    <span data-aos="zoom-in" data-aos-delay="2000"><img src="img/profiles/team-1.jpg" alt=""></span>
+                                    <span data-aos="zoom-in" data-aos-delay="2000"><img src="img/profiles/venant.jpeg" alt=""></span>
                                     <span data-aos="zoom-in" data-aos-delay="2200"><img src="img/profiles/aguero.jpeg" alt=""></span>
-                                    <span data-aos="zoom-in" data-aos-delay="2400"><img src="img/profiles/team-3.jpg" alt=""></span>
+                                    <span data-aos="zoom-in" data-aos-delay="2400"><img src="img/profiles/port.png" alt=""></span>
                                     <span data-aos="flip=left" data-aos-delay="2600"><img src="img/profiles/IMG_.jpeg" alt=""></span>
-                                    <span data-aos="flip-left" data-aos-delay="2800"><img src="img/profiles/team-2.jpg" alt=""></span>
+                                    <span data-aos="flip-left" data-aos-delay="2800"><img src="img/profiles/prof.jpg" alt=""></span>
                                     <span data-aos="flip-left" data-aos-delay="3000"><img src="img/profiles/zidan.PNG" alt=""></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="faq">
-                        <h4>FAQ</h4>
+                    <div class="faq animate__animated animate__zoomInUp animate__delay-2s">
+                        <h4>FAQ <i class="bi bi-patch-question"></i></h4>
                         <div>
                            <ul>
                             <li>
@@ -171,13 +177,13 @@
                 </div>
                 <div class="m2" data-aos="fade-up" data-aos-delay="1000">
                     <div class="sm">
-                        <h4>Near by friends</h4>
+                        <h4>Near by friends <i class="bi bi-people"></i></h4>
                         <div>
                             <div class="nbf">
                                 <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="2000" data-name="Melody"><img src="img/profiles/prof.jpg">Melody</div>
                                 <div data-aos-duration="800" data-aos="fade-right" data-aos-delay="2300" data-name="Zidane"><img src="img/profiles/zidan.PNG">Zidane</div>
                                 <div data-aos-duration="600" data-aos="fade-up" data-aos-delay="2500" data-name="Rayan"><img src="img/profiles/IMG_.jpeg">Rayan</div>
-                                <div data-aos-duration="500" data-aos="fade-left" data-aos-delay="2800" data-name="Tommy"><img src="img/profiles/team-3.jpg">Tommy</div>
+                                <div data-aos-duration="500" data-aos="fade-left" data-aos-delay="2800" data-name="Tommy"><img src="img/profiles/port.png">Tommy</div>
                                 <div data-aos-duration="300" data-aos="fade-left" data-aos-delay="3000" data-name="Jessy"><img src="img/profiles/aguero.jpeg">Jessy</div>
                             </div>
                             <div class="sf" data-aos="zoom-in-up" data-aos-delay="3000" data-aos-duration="300">
@@ -186,9 +192,9 @@
                                 <button>+</button>
                             </div>
                         </div>
-                            <span class="parti"><h4>Participate</h4> <h6>5 person</h6></span>
                     </div>
-                    <div class="big">
+                    <div class="big animate__animated animate__zoomInDown animate__delay-2s ">
+                        <span><h4>Participate <i class="bi bi-person-plus"></i></h4> <h6>5 person</h6></span>
                        <ul>
                             <li title="Frank Aguero" data-aos="zoom-out-up" data-aos-delay="2000" data-aos-duration="1000">
                                 <div class="per"><img src="img/profiles/aguero.jpeg" alt=""></div>
@@ -207,7 +213,7 @@
                                 </div>
                             </li>
                             <li title="John Smith" data-aos="zoom-out-up" data-aos-delay="2300" data-aos-duration="700">
-                                <div class="per"><img src="img/profiles/team-1.jpg" alt=""></div>
+                                <div class="per"><img src="img/profiles/port.png" alt=""></div>
                                 <div class="rt">
                                     <span class="nms">
                                         <h3 class="pname">John Smith</h3>
@@ -239,7 +245,7 @@
                                 </div>
                             </li>
                             <li title="Malenia lync" data-aos="zoom-out-up" data-aos-delay="2600" data-aos-duration="400">
-                                <div class="per"><img src="img/profiles/team-2.jpg" alt=""></div>
+                                <div class="per"><img src="img/profiles/venant.jpeg" alt=""></div>
                                 <div class="rt">
                                     <span class="nms">
                                         <h3 class="pname">Malenia lync</h3>
@@ -277,22 +283,47 @@
                             </div>
                         </ul>
                     </div>
+                    <div class="big animate__animated animate__zoomInUp animate__delay-2s">
+                        <span id="chats">
+                            <h4>Chats <i class="bi bi-chat-text"></i></h4> 
+                            <div class="act_users">
+                                <span><img src="./img/profiles/aguero.jpeg" alt=""></span>
+                                <span><img src="./img/profiles/zidan.PNG" alt=""></span>
+                                <span><img src="./img/profiles/prof.jpg" alt=""></span>
+                                <span class="this"><img src="./img/profiles/IMG_.jpeg" alt=""></span>
+
+                                <h6 class="active">7+</h6>
+                            </div>
+                        </span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="m3" data-aos="fade-up" data-aos-delay="1500">
-                    <h4>Split Request</h4>
-                    <div class="bg">
+                    <h4>Split Request <i class="bi bi-layout-wtf"></i></h4>
+                    <div class="bg animate__animated animate__bounceInUp animate__delay-3s">
                         <div class="top">
                             <div class="me">
                                 <img src="img/profiles/aguero.jpeg" alt="">
                             </div>
                             <div class="dets">
                                 <h5>Hey, <strong>Mike!</strong></h5>
-                                <p class="stat"> <strong>Rayantech</strong> requested you for a splitbill payment of <em>$72.80</em> from <strong>Suchi & bar</strong></p>
+                                <p class="stat"> <strong>Rayantech</strong> requested you for a split bill payment of <em>$72.80</em> from <strong>Suchi & bar</strong></p>
                             </div>
                         </div>
                         <div class="dwn">
                             <div>
-                                <span>SplitBill</span>
+                                <span>Split Bill</span>
                                 <span>$72.80</span>
                             </div>
                             <div>
@@ -304,19 +335,19 @@
                                 <span>Details</span>
                             </div>
                             <span>
-                                <button class="decl" style="--this-c : var(--col2)">Decline</button>
-                                <button class="acpt" style="--this-c : var(--col6)">Accept</button>
+                                <button class="decl" style="--this-c : var(--col2)">Decline <i class="bi bi-emoji-expressionless"></i></button>
+                                <button class="acpt" style="--this-c : var(--col6)">Accept <i class="bi bi-emoji-sunglasses"></i></button>
                             </span>
                         </div>
                     </div>
-                    <h4>Pending Bill</h4>
+                    <h4>Pending Bill <i class="bi bi-journal-text"></i></h4>
 
-                    <div class="sm">
+                    <div class="sm animate__animated animate__bounceInLeft animate__delay-3s">
                         <div>
                             <div class="sec">
                                 <div class="lft">
                                     <h3>Shuri's Bar</h3>
-                                    <p>Total Payment $260.15</p>
+                                    <p>Total Payment <b>$260.15</b></p>
                                     <div class="grp">
                                         <img src="img/profiles/zidan.PNG" alt="">
                                         <img src="img/profiles/IMG_.jpeg" alt="">
@@ -344,10 +375,10 @@
                             <div class="sec">
                                 <div class="lft">
                                     <h3>Kasturi Bar</h3>
-                                    <p>Total Payment $440.00</p>
+                                    <p>Total Payment <b>$440.00</b></p>
                                     <div class="grp">
                                         <img src="img/profiles/her1_e.png" alt="">
-                                        <img src="img/profiles/team-4.jpg" alt="">
+                                        <img src="img/profiles/port.png" alt="">
                                         <img src="img/profiles/aguero.jpeg" alt="">
                                     </div>
                                 </div>
@@ -373,11 +404,11 @@
                             <div class="sec">
                                 <div class="lft">
                                     <h3>Part and Grill</h3>
-                                    <p>Total Payment $380.60</p>
+                                    <p>Total Payment <b>$380.60</b></p>
                                     <div class="grp">
-                                        <img src="img/profiles/team-1.jpg" alt="">
+                                        <img src="img/profiles/port.png" alt="">
                                         <img src="img/profiles/IMG_.jpeg" alt="">
-                                        <img src="img/profiles/team-2.jpg" alt="">
+                                        <img src="img/profiles/venant.jpeg" alt="">
                                         <img src="img/profiles/prof.jpg" alt="">
                                     </div>
                                 </div>
@@ -403,13 +434,13 @@
                             <div class="sec">
                                 <div class="lft">
                                     <h3>Satoshi Bar</h3>
-                                    <p>Total Payment $573.030</p>
+                                    <p>Total Payment <b>$573.030</b></p>
                                     <div class="grp">
                                         <img src="img/profiles/prof.jpg" alt="">
                                         <img src="img/profiles/aguero.jpeg" alt="">
-                                        <img src="img/profiles/team-3.jpg" alt="">
+                                        <img src="img/profiles/venant.jpeg" alt="">
                                         <img src="img/profiles/zidan.PNG" alt="">
-                                        <img src="img/profiles/team-1.jpg" alt="">
+                                        <img src="img/profiles/port.png" alt="">
                                     </div>
                                 </div>
                                 <div class="rgt">
